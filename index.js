@@ -35,4 +35,10 @@ console.log(values);
 let pairs = lodash.toPairs(obj);
 console.log(pairs);
 
+// use the debouce function to print the sum of array after 2 seconds
+let debounced = lodash.debounce(() => {
+    console.log(lodash.sum(arr));
+}, 2000);
+debounced();
+
 // Path: index.js
